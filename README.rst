@@ -9,6 +9,8 @@ Behold My Awesome Project!
 .. image:: https://api.codacy.com/project/badge/Grade/2cc180d4c2bb4b878bcd0376f03ff8dc
      :target: https://www.codacy.com/project/Braintelligence/JanuStats/dashboard
      :alt: Codacy Metrics
+.. image:: https://travis-ci.org/Braintelligence/JanuStats.svg?branch=master
+    :target: https://travis-ci.org/Braintelligence/JanuStats
 
 :License: Apache Software License 2.0
 
