@@ -6,10 +6,6 @@
 # install test requirements
 pip install -r requirements/local.txt
 
-# create a cache directory
-mkdir -p .cache/docker
-cd .cache/docker
-
 # run the project's tests
 docker-compose -f /local.yml run django python manage.py pytest
 
