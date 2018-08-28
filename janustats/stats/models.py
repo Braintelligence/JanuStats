@@ -8,17 +8,18 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils.translation import ugettext_lazy as _
 
 
-# TimeSeries models
+# Statistical models
 
-class TimeSeries(models.Model):
+class StatData(models.Model):
     """
-    Abstract class for time series without the time boundary.
+    Generic class for statistical data.
     """
 
     year = models.IntegerField(blank=False, validators=[MinValueValidator(1000), MaxValueValidator(9999)],
                                help_text=_("Veröffentlichungsjahr des Datums, erlaubt: (1000-9999)."))
     quarter = models.IntegerField(blank=True, validators=[MinValueValidator(1), MaxValueValidator(4)],
                                   help_text=_("Veröffentlichungsquartal des Datums, erlaubt: (1-4)."))
+    country = models.CharField(blank=True, max_length=100, help_text=_("Land des Datums, maximal 100 Zeichen."))
 
 
 
@@ -57,14 +58,6 @@ class StatValue(models.Model):
     vintage = models.CharField(
         blank=True, max_length=100, help_text=_("Vintage des Datums, maximal 100 Zeichen."))
 
+    statobject = models.ForeignKey(StatData, on_delete=models.CASCADE)
+
     objects = StatValueManager()
-
-    class Meta:
-        abstract = True
-
-class StatValueTimeSeries(StatValue):
-    """
-    Statistical values for TimeSeries objects.
-    """
-
-    statobject = models.ForeignKey(TimeSeries, on_delete=models.CASCADE)
