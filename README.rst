@@ -6,7 +6,9 @@ Behold My Awesome Project!
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
      :target: https://github.com/pydanny/cookiecutter-django/
      :alt: Built with Cookiecutter Django
-
+.. image:: https://api.codacy.com/project/badge/Grade/2cc180d4c2bb4b878bcd0376f03ff8dc
+     :target: https://www.codacy.com/project/Braintelligence/JanuStats/dashboard
+     :alt: Codacy Metrics
 
 :License: Apache Software License 2.0
 
