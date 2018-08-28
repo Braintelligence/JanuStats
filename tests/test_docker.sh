@@ -4,7 +4,7 @@
 # sh tests/test_docker.sh
 
 # install test requirements
-pip install -r requirements/local.txt
+# pip install -r requirements/local.txt
 
 # run the project's tests
 docker-compose -f local.yml run django python manage.py pytest
