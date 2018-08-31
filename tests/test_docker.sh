@@ -7,7 +7,8 @@
 # pip install -r requirements/local.txt
 
 # FOSSA
-curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | sudo bash
+wget https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh
+sudo bash install.sh
 fossa
 
 # run the project's tests
