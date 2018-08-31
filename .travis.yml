@@ -18,12 +18,12 @@ steps:
     command: curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | sudo bash
   - checkout
 before_script:
-	- fossa
+  - fossa
 script:
 #  - tox -e $TOX_ENV
   - sh tests/test_docker.sh
 after_success:
-		- fossa test
+  - fossa test
 notifications:
   email:
     on_success: change
