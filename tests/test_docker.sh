@@ -6,6 +6,9 @@
 # install test requirements
 # pip install -r requirements/local.txt
 
+# install FOSSA
+curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | sudo bash
+
 # run the project's tests
 docker-compose -f local.yml run django python manage.py pytest
 
