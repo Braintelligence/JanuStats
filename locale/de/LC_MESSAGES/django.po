@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-28 14:16+0000\n"
+"POT-Creation-Date: 2018-08-31 07:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,39 +18,95 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: janustats/stats/models.py:19
-msgid "Veröffentlichungsjahr des Datums, erlaubt: (1000-9999)."
-msgstr ""
-
-#: janustats/stats/models.py:21
-msgid "Veröffentlichungsquartal des Datums, erlaubt: (1-4)."
-msgstr ""
-
 #: janustats/stats/models.py:22
-msgid "Land des Datums, maximal 100 Zeichen."
+msgid "Name der Vintage-Quelle, maximal 300 Zeichen."
 msgstr ""
 
-#: janustats/stats/models.py:48
+#: janustats/stats/models.py:23
+msgid "Name des Herausgebers, maximal 100 Zeichen."
+msgstr ""
+
+#: janustats/stats/models.py:24
+msgid "Formatierte Datumsangabe der Vintage-Veröffentlichung."
+msgstr ""
+
+#: janustats/stats/models.py:37
 msgid "Name des statistischen Datums, maximal 100 Zeichen."
 msgstr ""
 
-#: janustats/stats/models.py:52
+#: janustats/stats/models.py:39
+msgid "Kürzel des Datums, maximal 50 Zeichen und muss einzigartig sein."
+msgstr ""
+
+#: janustats/stats/models.py:67
+msgid "Saisonbereinigt"
+msgstr ""
+
+#: janustats/stats/models.py:68
+msgid "Nicht saisonbereinigt"
+msgstr ""
+
+#: janustats/stats/models.py:69 janustats/stats/models.py:75
+msgid "Keine Angabe"
+msgstr ""
+
+#: janustats/stats/models.py:73
+msgid "Nominal"
+msgstr ""
+
+#: janustats/stats/models.py:74
+msgid "Real"
+msgstr ""
+
+#: janustats/stats/models.py:86
 msgid ""
 "Wert des statistischen Datums, maximal 36 Ziffern mit maximal 18 "
 "Dezimalstellen."
 msgstr ""
 
-#: janustats/stats/models.py:54
+#: janustats/stats/models.py:91
 msgid "Angabe, ob das statistische Datum saisonbereinigt ist."
 msgstr ""
 
-#: janustats/stats/models.py:57
+#: janustats/stats/models.py:96
 msgid ""
-"0/False bedeutet nominal, 1/True bedeutet real, Null bedeutet weder noch."
+"Auswahl ob der Wert real oder nominal ist, bzw. keine Angabe möglich ist."
 msgstr ""
 
-#: janustats/stats/models.py:59
-msgid "Vintage des Datums, maximal 100 Zeichen."
+#: janustats/stats/models.py:100
+msgid "Jahr des Datums, erlaubt: (1000-9999)."
+msgstr ""
+
+#: janustats/stats/models.py:102
+msgid "Semester des Datums, erlaubt: (1-2)."
+msgstr ""
+
+#: janustats/stats/models.py:104
+msgid "Quartal des Datums, erlaubt: (1-4)."
+msgstr ""
+
+#: janustats/stats/models.py:106
+msgid "Monat des Datums, erlaubt: (1-12)."
+msgstr ""
+
+#: janustats/stats/models.py:111
+msgid ". Semester"
+msgstr ""
+
+#: janustats/stats/models.py:113
+msgid ". Quartal"
+msgstr ""
+
+#: janustats/stats/models.py:115
+msgid ". Monat"
+msgstr ""
+
+#: janustats/stats/models.py:131
+msgid "Name der Wertesammlung, maximal 300 Zeichen."
+msgstr ""
+
+#: janustats/stats/models.py:132
+msgid "Kommentar zur Wertesammlung."
 msgstr ""
 
 #: janustats/templates/account/account_inactive.html:5
