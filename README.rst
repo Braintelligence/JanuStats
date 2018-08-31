@@ -11,6 +11,8 @@ Behold My Awesome Project!
      :alt: Codacy Metrics
 .. image:: https://travis-ci.org/Braintelligence/JanuStats.svg?branch=master
     :target: https://travis-ci.org/Braintelligence/JanuStats
+.. image:: https://scrutinizer-ci.com/g/Braintelligence/JanuStats/badges/quality-score.png?b=master
+    :target: https://scrutinizer-ci.com/g/Braintelligence/JanuStats/
 
 :License: Apache Software License 2.0
 
