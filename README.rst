@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FBraintelligence%2FJanuStats.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FBraintelligence%2FJanuStats?ref=badge_shield)
+
 JanuStats
 =========
 
@@ -108,3 +110,7 @@ See detailed `cookiecutter-django Docker documentation`_.
 
 
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FBraintelligence%2FJanuStats.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FBraintelligence%2FJanuStats?ref=badge_large)
