@@ -12,9 +12,18 @@ python:
 env:
   - TOX_ENV=py36
 install: pip install -r requirements/local.txt
+steps: 
+  - run: 
+    name: Install FOSSA
+    command: curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | sudo bash
+  - checkout
+before_script:
+	- fossa
 script:
 #  - tox -e $TOX_ENV
   - sh tests/test_docker.sh
+after_success:
+		- fossa test
 notifications:
   email:
     on_success: change
