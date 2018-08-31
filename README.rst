@@ -11,6 +11,10 @@ Behold My Awesome Project!
      :alt: Codacy Metrics
 .. image:: https://travis-ci.org/Braintelligence/JanuStats.svg?branch=master
     :target: https://travis-ci.org/Braintelligence/JanuStats
+.. image:: https://scrutinizer-ci.com/g/Braintelligence/JanuStats/badges/quality-score.png?b=master
+    :target: https://scrutinizer-ci.com/g/Braintelligence/JanuStats/
+.. image:: https://app.fossa.io/api/projects/git%2Bgithub.com%2FBraintelligence%2FJanuStats.svg?type=shield
+    :target: https://app.fossa.io/projects/git%2Bgithub.com%2FBraintelligence%2FJanuStats?ref=badge_shield
 
 :License: Apache Software License 2.0
 
@@ -108,3 +112,7 @@ See detailed `cookiecutter-django Docker documentation`_.
 
 
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FBraintelligence%2FJanuStats.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FBraintelligence%2FJanuStats?ref=badge_large)
