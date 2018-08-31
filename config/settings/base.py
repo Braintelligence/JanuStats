@@ -67,6 +67,11 @@ THIRD_PARTY_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'rest_framework',
+    'django_countries', # Special field for countries
+    'guardian', # Per-object permissions
+    'actstream', # Activity streams
+    'reversion', # Version control for models
+
 ]
 LOCAL_APPS = [
     'janustats.users.apps.UsersAppConfig',
@@ -89,6 +94,7 @@ MIGRATION_MODULES = {
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
+    'guardian.backends.ObjectPermissionBackend',
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#auth-user-model
 AUTH_USER_MODEL = 'users.User'

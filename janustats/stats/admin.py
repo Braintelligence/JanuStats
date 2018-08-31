@@ -2,7 +2,10 @@ from django.contrib import admin
 from django.contrib.auth import admin as auth_admin
 from django.contrib.auth import get_user_model
 
-from janustats.stats.models import StatSource, StatValueType, StatValue
+from janustats.stats.models import StatSource, StatValueType, StatValue, StatCollection
+
+# Version control
+from reversion.admin import VersionAdmin
 
 # InlineAdmins
 class StatValueInline(admin.TabularInline):
@@ -36,9 +39,6 @@ class StatValueTypeAdmin(admin.ModelAdmin):
     ]
 
 
-
-
-
 @admin.register(StatValue)
 class StatValueAdmin(admin.ModelAdmin):
 
@@ -53,3 +53,8 @@ class StatValueAdmin(admin.ModelAdmin):
     )
 
     list_select_related = True
+
+
+@admin.register(StatCollection)
+class StatCollectionAdmin(VersionAdmin):
+    pass

@@ -8,6 +8,9 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils.translation import gettext_lazy as _
 from django.utils.translation import ngettext_lazy as __
 
+# Special fields
+from django_countries.fields import CountryField
+
 
 # Statistical models
 
@@ -91,7 +94,7 @@ class StatValue(models.Model):
         choices=REAL_NOMINAL_CHOICES,
         max_length=2,
         help_text=_("Auswahl ob der Wert real oder nominal ist, bzw. keine Angabe möglich ist."))
-    country = models.CharField(blank=False, max_length=100, help_text=_("Land des Datums, maximal 100 Zeichen."))
+    country = CountryField()
     ## TimeFields
     year = models.IntegerField(blank=False, validators=[MinValueValidator(1000), MaxValueValidator(9999)],
                                help_text=_("Jahr des Datums, erlaubt: (1000-9999)."))
@@ -117,3 +120,13 @@ class StatValue(models.Model):
 
     # Manager
     objects = StatValueManager()
+
+
+class StatCollection(models.Model):
+    """
+    A collection of specific StatValues created by filtering/choosing
+    """
+
+    # Fields
+    name = models.CharField(blank=True, max_length=300, help_text=_("Name der Wertesammlung, maximal 300 Zeichen."))
+    comment = models.TextField(blank=True, help_text=_("Kommentar zur Wertesammlung."))
